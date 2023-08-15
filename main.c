@@ -1,24 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sbenouat <sbenouat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/22 23:48:31 by sbenouat          #+#    #+#             */
-/*   Updated: 2022/12/20 09:08:27 by sbenouat         ###   ########.fr       */
+/*   Created: 2023/08/14 06:03:19 by sbenouat          #+#    #+#             */
+/*   Updated: 2023/08/14 06:07:03 by sbenouat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include 
 
-void	ft_bzero(void *s, size_t n)
-{
-	unsigned char	*inter;
-
-	inter = s;
-	while (n--)
+int	main(int ac, char **av) {
+	if ac != 5
 	{
-		*inter++ = 0;
+		write(1, "Error not 4 args", ft_strlen("Error not 4 args"));
+		return (0);
 	}
+	
 }
